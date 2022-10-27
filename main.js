@@ -47,6 +47,18 @@ function four() {
 
 function five() {
   const n = +prompt("Enter N");
+  let a = 1;
+  let b = 1;
+  let c;
+  for (let i = 2; i <= n; i++) {
+    c = a + b;
+    a = b;
+    b = c;
+    if (i == n) {
+      console.log(a);
+      break;
+    }
+  }
 }
 
 four();
