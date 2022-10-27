@@ -83,14 +83,24 @@ function six() {
 
 function seven(){
   console.log("7. The user enters 1 number. Find a number that is a mirror image of the sequence of digits of a given number, for example, given the number 123, output is 321 in this case.");
-  let n = +prompt("Enter N");
-  let rev = 0;
-  while(n != 0){
-    rev = rev * 10;
-    rev += n % 10;
-    n = n / 10;
+  let num = +prompt("Enter N");
+  // let rev = 0;
+  ////
+  let rev_num = 0;
+  ////
+  while(num != 0){
+    //////
+    rev_num = rev_num*10 + num % 10;
+    num = Math.floor(num / 10);
+    /////
+    // rev = rev * 10;
+    // rev += num % 10;
+    // num = Math.floor(num / 10);
   }
-  console.log(rev);
+  // console.log(rev);
+  ////
+  console.log(rev_num);
+  /////
 }
 
 seven();
