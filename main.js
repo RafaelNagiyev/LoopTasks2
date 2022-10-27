@@ -1,4 +1,5 @@
 function one() {
+  console.log("1. The user enters 1 number (A). Print all numbers from 1 to 1000 that are divisible by A.");
   const a = +prompt("Enter A");
   for (let i = 1; i <= 1000; i++) {
     if (i % a == 0) {
@@ -7,6 +8,7 @@ function one() {
   }
 }
 function three() {
+  console.log("2. The user enters 1 number (A). Find the number of positive integers whose square is less than A (n^2 < A).");
   const a = +prompt("Enter A");
   for (let i = a - 1; i > 0; i--) {
     if (a % i == 0) {
@@ -17,6 +19,7 @@ function three() {
 }
 
 function two() {
+  console.log("3. The user enters 1 number (A). Print the largest divisor (other than A itself) of the number A.");
   const a = +prompt("Enter A");
   for (let i = 1; ; i++) {
     if (i ** 2 < a) {
@@ -26,6 +29,7 @@ function two() {
 }
 
 function four() {
+  console.log("4. The user enters 2 numbers (A and B). Print the sum of all numbers from the range A to B that are divisible by 7 without a remainder. (Note that B may be less than A if you type).");
   const a = +prompt("Enter A");
   const b = +prompt("Enter B");
   if (a > b) {
@@ -46,6 +50,7 @@ function four() {
 }
 
 function five() {
+  console.log("5. The user enters 1 positive number (N). Print the Nth number of the fibonacci series. In the fibonacci series, each next number is the sum of the previous two. The first and second are considered equal to 1.");
   const n = +prompt("Enter N");
   let a = 1;
   let b = 1;
@@ -62,6 +67,7 @@ function five() {
 }
 
 function six() {
+  console.log("6. The user enters 2 numbers. Find their greatest common divisor using Euclid's algorithm. (yes, you've got to google this algorithm at first :D ).");
   let a = +prompt("Enter A");
   let b = +prompt("Enter B");
   while (a != 0 && b != 0) {
